@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Navbar } from '../ui/Navbar';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,7 +16,8 @@ export function Layout({ children, title, description }: LayoutProps) {
         {description && <meta name='description' content={description} />}
         <meta name='keywords' content={`pokémon pokedex ${title}`} />
       </Head>
-      <main>{children}</main>
+      <Navbar />
+      <main style={{ padding: '0px 20px' }}>{children}</main>
     </>
   );
 }
