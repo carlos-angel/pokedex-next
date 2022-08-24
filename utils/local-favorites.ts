@@ -19,3 +19,8 @@ export function existInFavorites(id: number): boolean {
   const isFav = favorites.includes(id);
   return isFav;
 }
+
+export function pokemons(): number[] {
+  const favorites: number[] = JSON.parse(localStorage.getItem(FAVORITES_STORAGE) || '[]');
+  return favorites;
+}
