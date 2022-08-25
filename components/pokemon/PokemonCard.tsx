@@ -8,7 +8,7 @@ interface Props {
 
 export default function PokemonCard({ pokemon }: Props) {
   const router = useRouter();
-  const onClick = () => router.push(`/pokemon/${pokemon.id}`);
+  const onClick = () => router.push(`/name/${pokemon.name}`);
 
   return (
     <Grid xs={6} sm={3} md={2} xl={1}>
