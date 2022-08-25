@@ -16,7 +16,7 @@ const FavoritesPage: NextPage = () => {
   }, []);
 
   return (
-    <Layout title='favoritos'>
+    <Layout title='Mis pokemons favoritos'>
       {isNotFavoritesPokemons && <NoFavorites />}
       {!isNotFavoritesPokemons && <FavoritePokemons pokemons={favoritesPokemons} />}
     </Layout>
