@@ -118,6 +118,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: {
       pokemon,
     },
+    revalidate: 86400,
   };
 };
 
